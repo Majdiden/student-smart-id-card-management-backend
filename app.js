@@ -8,28 +8,28 @@ const http = require('http');
 const fs = require('fs');
 // const fingerprint = require('fingerprintjs2');
 
-const adb = require('adbkit');
+// const adb = require('adbkit');
 
-const client = adb.createClient({
-  host: '127.0.0.1',
-  port: 5037
-});
-const deviceId = "YTK4C19402007236";
+// const client = adb.createClient({
+//   host: '127.0.0.1',
+//   port: 5037
+// });
+// const deviceId = "YTK4C19402007236";
 
-client.shell(deviceId, 'getprop | grep fingerprint')
-  .then(adb.util.readAll)
-  .then(output => {
-    console.log(output.toString().trim());
-  }).then(() => {
+// client.shell(deviceId, 'getprop | grep fingerprint')
+//   .then(adb.util.readAll)
+//   .then(output => {
+//     console.log(output.toString().trim());
+//   }).then(() => {
 
-    client.pull(deviceId, 'fingerprint.dat')
-    .then(transfer => {
-      adb.util.readAll(transfer)
-        .then(data => {
-          fs.writeFileSync('fingerprint.dat', data);
-        });
-    });
-  });
+//     client.pull(deviceId, 'fingerprint.dat')
+//     .then(transfer => {
+//       adb.util.readAll(transfer)
+//         .then(data => {
+//           fs.writeFileSync('fingerprint.dat', data);
+//         });
+//     });
+//   });
 // const {read} = require('./public/javascripts/reader');
 // const nfc = require('nfc-pcsc');
 // console.log('nfc:', nfc.TAG_ISO_14443_3)
