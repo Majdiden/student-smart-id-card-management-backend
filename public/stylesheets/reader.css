@@ -1,0 +1,16 @@
+.container {
+    margin: 0 auto;
+}
+
+.scan {
+    width: 80px;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    color: black;
+    background-color: aliceblue;
+}
+
+.output {
+    margin-top: 100px;
+}

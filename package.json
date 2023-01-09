@@ -1,0 +1,35 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "server": "nodemon app.js"
+  },
+  "dependencies": {
+    "@pokusew/pcsclite": "^0.6.0",
+    "@taptrack/ndef": "^1.0.3",
+    "adb": "^0.2.0",
+    "adbkit": "^2.11.1",
+    "axios": "^1.2.1",
+    "cookie-parser": "~1.4.4",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "fingerprintjs2": "^2.1.4",
+    "fs": "^0.0.1-security",
+    "html-express-js": "^1.1.1",
+    "http-errors": "~1.6.3",
+    "https": "^1.0.0",
+    "isomorphic-cookie": "^1.2.4",
+    "jade": "^0.29.0",
+    "localtunnel": "^2.0.2",
+    "mongodb": "^4.13.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "ndef": "^0.2.0",
+    "nfc-pcsc": "^0.8.1",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "uuidv4": "^6.2.13"
+  }
+}
